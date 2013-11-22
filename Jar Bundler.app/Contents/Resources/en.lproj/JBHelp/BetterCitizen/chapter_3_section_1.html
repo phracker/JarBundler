@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+    <HEAD>
+        <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+        <meta name="generator" content="XML_Publisher">
+        <meta name="Copyright" content="Copyright 2002 Apple Computer, Inc. All Rights Reserved.">
+        <TITLE>Jar Bundler Help: How Do I Make My Java Application a Better Mac OS X Citizen</TITLE>
+    </HEAD>
+<BODY bgcolor="#ffffff">
+
+<!-- start of header -->
+<!--#include virtual="/adcnavbar1" -->
+<!-- end of header -->
+
+
+
+<a name="//apple_ref/doc/uid/DontLinkBookID_1-DontLinkChapterID_3" title="How Do I Make My Java Application a Better Mac OS X Citizen"></a>
+
+<a name="//apple_ref/doc/uid/DontLinkBookID_1-DontLinkChapterID_3-BBCBIEGA"></a>
+<a name="BBCBIEGA"></a>
+<h1><font face="Lucida Grande,Helvetica,Arial" color="#330099">How Do I Make My Java Application a Better
+Mac OS X Citizen</font></h1>
+<p><font face="Geneva,Helvetica,Arial" size="2">Macintosh users expect their applications
+to behave in a certain way. For example, Mac users are accustomed
+to having an application&#8217;s menu bar at the top of their screen,
+not embedded within each window. Jar Bundler (and other developer
+tools) help you make your Java applications act like native Mac
+OS X applications. When possible, you should take advantage of them
+to provide end-users the experience they expect from a Mac OS X application.
+The following list describes steps you can take to tailor a Java
+application to Mac OS X so that it provides users with a familiar
+interface.<ul><li><font face="Geneva,Helvetica,Arial" size="2">Give
+your application a custom icon that replaces the generic icon that
+Mac OS X gives all Java applications. In the Build Information pane,
+click Choose Icon. An Open dialog appears, letting you choose an
+icon (<tt>.icns)</tt> file. To convert an existing
+icon to the correct format, use IconComposer, which is included
+with the Developer Tools package.</font></li><br>
+<li><font face="Geneva,Helvetica,Arial" size="2">Have the application menu bar appear at the top of the screen.
+On other operating systems, the menu bar is usually at the top of
+the application window, which differs from Mac OS X. To have your
+menu bar appear at the top of the screen, select Use MacOS Menu
+Bar in the Build Information pane. This just sets the <tt><!--a logicalPath="//apple_ref/doc/c_ref/com.apple.macos.useScreenMenuBar"-->com.apple.macos.useScreenMenuBar<!--/a--></tt> Java
+property.</font></li><br>
+<li><font face="Geneva,Helvetica,Arial" size="2">Set the &#8220;About&#8221; menu item under the application menu.
+To set the text to display in this menu item, enter it in the About
+Menu Name text field in the Properties pane.</font></li><br>
+<li><font face="Geneva,Helvetica,Arial" size="2">Set the application&#8217;s version information, which is displayed
+in the Finder&#8217;s preview panes and Get Info windows. To set the
+version that&#8217;s displayed in the Finder&#8217;s column view, enter
+it in the Short Version text field in the Properties pane. To set
+the version that&#8217;s displayed in the Get Info window, enter it
+in the the Get-Info String text field in the same pane.</font></li><br></ul></font></p>
+
+<!-- start of footer -->
+<!--#include virtual="/footer" -->
+<!-- end of footer -->
+
+</BODY>
+</HTML>

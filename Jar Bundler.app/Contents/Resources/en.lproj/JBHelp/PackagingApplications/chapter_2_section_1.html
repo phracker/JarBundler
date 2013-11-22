@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+    <HEAD>
+        <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+        <meta name="generator" content="XML_Publisher">
+        <meta name="Copyright" content="Copyright 2002 Apple Computer, Inc. All Rights Reserved.">
+        <TITLE>Jar Bundler Help: How Do I Package Class Or JAR Files Into a Bundle</TITLE>
+    </HEAD>
+<BODY bgcolor="#ffffff">
+
+<!-- start of header -->
+<!--#include virtual="/adcnavbar1" -->
+<!-- end of header -->
+
+
+
+<a name="//apple_ref/doc/uid/DontLinkBookID_1-DontLinkChapterID_2" title="How Do I Package Class Or JAR Files Into a Bundle"></a>
+
+<a name="//apple_ref/doc/uid/DontLinkBookID_1-DontLinkChapterID_2-BBCBIEGA"></a>
+<a name="BBCBIEGA"></a>
+<h1><font face="Lucida Grande,Helvetica,Arial" color="#330099">How Do I Package Class Or JAR Files Into
+a Bundle</font></h1>
+<p><font face="Geneva,Helvetica,Arial" size="2">This section gives directions on packaging
+up Java class files or a JAR file into a double-clickable application.
+To package your application, you must specify (at a minimum) the
+main class name, the classpath, and any additional files required
+outside of the class files or the JAR file. </font></p>
+<p><font face="Geneva,Helvetica,Arial" size="2">To package your application,</font></p>
+<ol><li><font face="Geneva,Helvetica,Arial" size="2">In Jar Bundler&#8217;s
+Build Information pane, specify the class containing the <tt><!--a logicalPath="//apple_ref/doc/c_ref/main"-->main<!--/a--></tt> method. It&#8217;s
+easiest to click &#8220;Choose...&#8221; and navigate to the JAR file or
+the class file containing the method. After doing this, Jar Bundler
+displays all the classes containing a <tt><!--a logicalPath="//apple_ref/doc/c_ref/main"-->main<!--/a--></tt> method
+in the popup button. Jar Bundler also automatically adds the JAR
+file or the class file to the list of resources to include in the
+bundle.</font></li><br>
+<li><font face="Geneva,Helvetica,Arial" size="2">If any arguments need to be passed to the <tt><!--a logicalPath="//apple_ref/doc/c_ref/main "-->main <!--/a--></tt>method,
+put them in them in the Arguments to Main text field.</font></li><br>
+<li><font face="Geneva,Helvetica,Arial" size="2">Add any additional files needed by your application. This
+might include graphics, sounds, or additional JAR and class files.
+In the Classpath and Files pane, click &#8220;Add...&#8221; in the Additional
+Files and Resources box. This will pop up a dialog where you can navigate
+the filesystem and choose files to include.</font></li><br>
+<li><font face="Geneva,Helvetica,Arial" size="2">Make any additions to the classpath as needed. Be sure that <tt>$JAVAROOT/</tt> is
+included; this is the directory inside the bundle where files you
+want to include are placed, including the JAR file or the class
+file containing the <tt><!--a logicalPath="//apple_ref/doc/c_ref/main"-->main<!--/a--></tt> method. </font></li><br>
+<li><font face="Geneva,Helvetica,Arial" size="2">To finish, click &#8220;Create Application...&#8221;. From here you
+can select where the bundle is generated and give it a name. This
+will be the name that Jar Bundler gives the final application bundle.</font></li><br></ol>
+<p><font face="Geneva,Helvetica,Arial" size="2">Having finished these steps, you now have a double-clickable
+Java application, which appears just like any other Mac OS X application.
+If you're curious about how the bundle is laid out, control-click
+the application in the Finder, and choose Show Package Contents.</font></p>
+
+<!-- start of footer -->
+<!--#include virtual="/footer" -->
+<!-- end of footer -->
+
+</BODY>
+</HTML>
